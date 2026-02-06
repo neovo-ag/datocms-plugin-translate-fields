@@ -4,7 +4,7 @@ export default async function translate(
   string: string,
   options: TranslationOptions,
 ): Promise<string> {
-  const apiUrl = new URL('https://cors-proxy.datocms.com') // DatoCMS-provided CORS proxy
+  const apiUrl = new URL('https://cors-proxy.test.neovo.ch') // Neovo-provided CORS proxy
   apiUrl.searchParams.set(
     'url',
     'https://api.supertext.com/v1/translate/ai/text',
